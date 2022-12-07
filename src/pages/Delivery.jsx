@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styles from './styles/delivery.module.css';
 
 const Delivery = () => {
   return (
-    <div>Delivery</div>
+    <div className={styles.delivery}>
+      <div>Delivery</div>
+    </div>
   )
 }
 

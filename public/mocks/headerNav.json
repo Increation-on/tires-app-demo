@@ -13,5 +13,10 @@
         "title": "Доставка",
         "id": 3,
         "path": "/delivery"
+    },
+    {
+        "title": "Продукция",
+        "id": 4,
+        "path": "/product"
     }
 ]

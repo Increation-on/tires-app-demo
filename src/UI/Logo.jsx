@@ -1,5 +1,5 @@
 import styles from './styles/logo.module.css';
-import logo from './../images/logo.png';
+import logo from './../images/logo3.png';
 import { useEffect } from 'react';
 import { useLocation, NavLink } from 'react-router-dom';
 
@@ -10,10 +10,11 @@ const Logo = () => {
     const path = location.pathname;
 
     return (
-        <NavLink to="/main" className={path === '/main' || path === '/' ? styles.logo_dis : styles.logo}>
-            <img src={logo} alt="logo" />
-            <span className={styles.logo_name}>Tires</span>
-        </NavLink>
+        <div className={styles.logo_wrapper}>
+            <NavLink to="/main" className={path === '/main' || path === '/' ? styles.logo_disabled : styles.logo}>
+                <img src={logo} alt="logo" />
+            </NavLink>
+        </div>
     )
 }
 
